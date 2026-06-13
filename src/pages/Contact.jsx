@@ -156,7 +156,7 @@ function Contact() {
                   <div>
                     <span className="contact-info__label">GitHub</span>
                     <a
-                      href="https://github.com/pathum"
+                      href="https://github.com/pathum830"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="contact-info__value contact-info__value--link"
