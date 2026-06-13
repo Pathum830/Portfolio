@@ -162,7 +162,7 @@ function Contact() {
                       className="contact-info__value contact-info__value--link"
                       aria-label="Visit GitHub profile (opens in new tab)"
                     >
-                      github.com/pathum
+                      github.com/pathum830
                     </a>
                   </div>
                 </li>
