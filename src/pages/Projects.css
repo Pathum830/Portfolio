@@ -301,3 +301,170 @@
     transform: none;
   }
 }
+
+
+/* ==========================================
+   PROJECTS PAGE - GLOBAL THEME SUPPORT
+========================================== */
+
+/* Projects page background */
+.projects {
+  background: var(--page-bg);
+  color: var(--text-primary);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Projects heading */
+.projects .page-hero__title,
+.projects .section-title {
+  color: var(--heading-color) !important;
+}
+
+.projects .page-hero__subtitle,
+.projects .section-subtitle {
+  color: var(--subtitle-color) !important;
+}
+
+/* Project cards */
+[data-theme="dark"] .project-card {
+  background: #1b2b43;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .project-card__title {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .project-card__desc,
+[data-theme="dark"] .project-card__highlight {
+  color: #c5d3e5;
+}
+
+/* Project long description */
+[data-theme="dark"] .project-card__long-desc {
+  background: #24364e;
+  color: #dbeafe;
+}
+
+/* Technology tags */
+[data-theme="dark"] .project-card__tech-tag {
+  background: #263a54;
+  color: #bae6fd;
+  border-color: #3b526e;
+}
+
+[data-theme="dark"] .project-card__tech-tag:hover {
+  background: #164e75;
+  color: #67e8f9;
+  border-color: #67e8f9;
+}
+
+/* Category badge */
+[data-theme="dark"] .project-card__category-badge {
+  background: rgba(15, 29, 48, 0.94);
+  color: #67e8f9;
+  border: 1px solid #36516b;
+}
+
+/* Project actions */
+[data-theme="dark"] .project-card__actions {
+  border-color: #334155;
+}
+
+/* CTA section */
+[data-theme="dark"] .projects__cta {
+  border-color: #334155;
+}
+
+[data-theme="dark"] .projects__cta p {
+  color: #c5d3e5;
+}
+
+/* Dark theme project image */
+[data-theme="dark"] .project-card__image {
+  border-color: #334155;
+}
+
+/* Light theme */
+[data-theme="light"] .project-card {
+  background: #ffffff;
+  color: #172554;
+}
+
+[data-theme="light"] .project-card__title {
+  color: #172554;
+}
+
+[data-theme="light"] .project-card__desc,
+[data-theme="light"] .project-card__highlight {
+  color: #475569;
+}
+
+/* Smooth theme transition */
+.project-card,
+.project-card__body,
+.project-card__long-desc,
+.project-card__tech-tag,
+.project-card__actions,
+.projects__cta {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* =====================================
+   PROJECT HERO - LIGHT / DARK FIX
+===================================== */
+
+/* LIGHT MODE */
+[data-theme="light"] .page-hero {
+  background: #f8fafc !important;
+  color: #172554 !important;
+}
+
+[data-theme="light"] .page-hero__bg {
+  background: #f8fafc !important;
+  opacity: 1 !important;
+}
+
+[data-theme="light"] .page-hero__title {
+  color: #172554 !important;
+}
+
+[data-theme="light"] .page-hero__subtitle {
+  color: #475569 !important;
+}
+
+[data-theme="light"] .page-hero .section-tag {
+  background: #e0e7ff !important;
+  color: #4338ca !important;
+}
+
+/* DARK MODE */
+[data-theme="dark"] .page-hero {
+  background: #101d32 !important;
+  color: #f8fafc !important;
+}
+
+[data-theme="dark"] .page-hero__bg {
+  background: #101d32 !important;
+  opacity: 1 !important;
+}
+
+[data-theme="dark"] .page-hero__title {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .page-hero__subtitle {
+  color: #c5d3e5 !important;
+}
+
+[data-theme="dark"] .page-hero .section-tag {
+  background: #193b55 !important;
+  color: #67e8f9 !important;
+}

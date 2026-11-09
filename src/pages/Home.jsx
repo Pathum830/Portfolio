@@ -154,7 +154,7 @@ function Home() {
           <div className="stats__grid">
 
             <div className="stats__item">
-              <span className="stats__number">4+</span>
+              <span className="stats__number">6+</span>
               <span className="stats__label">Projects</span>
             </div>
 

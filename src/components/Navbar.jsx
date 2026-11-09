@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import './Navbar.css'
+import ThemeToggle from './ThemeToggle'
+
 
 /**
  * Navbar Component
@@ -51,6 +53,11 @@ function Navbar() {
             <span className="navbar__logo-initials" aria-hidden="true">PS</span>
             <span className="navbar__logo-text">Pathum</span>
           </Link>
+
+
+          <div className="navbar-actions">
+           <ThemeToggle />
+          </div>
 
           {/* Desktop Navigation */}
           <nav

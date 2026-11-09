@@ -265,6 +265,93 @@ function About() {
         </div>
       </section>
 
+      
+{/* Certifications Section */}
+<section className="certifications section" aria-labelledby="certifications-heading">
+  <div className="container">
+    <div className="section-header">
+      <span className="section-tag">Achievements & Learning</span>
+      <h2 id="certifications-heading" className="section-title">
+        My Certifications
+      </h2>
+      <p className="section-subtitle">
+        Professional certifications and courses that support my continuous learning journey.
+      </p>
+    </div>
+
+    <div className="certifications__grid">
+
+      {/* IBM Certificate */}
+      <article className="certification-card card">
+        <div className="certification-card__icon">☁️</div>
+        <span className="certification-card__category">Cloud Computing</span>
+        <h3>Cloud Computing Fundamentals</h3>
+        <p className="certification-card__issuer">
+          IBM SkillsBuild
+        </p>
+        <p className="certification-card__description">
+          Digital badge covering fundamental cloud computing concepts
+          and cloud technology knowledge.
+        </p>
+        <a
+          href="https://lnkd.in/p/g9ipBVZH"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="certification-card__link"
+        >
+          View Certificate <span>↗</span>
+        </a>
+      </article>
+
+      {/* Google Certificate */}
+      <article className="certification-card card">
+        <div className="certification-card__icon">🤖</div>
+        <span className="certification-card__category">Artificial Intelligence</span>
+        <h3>Google AI Essentials</h3>
+        <p className="certification-card__issuer">
+          Google
+        </p>
+        <p className="certification-card__description">
+          Learning AI fundamentals, generative AI tools,
+          prompt engineering and responsible AI usage.
+        </p>
+        <a
+          href="https://lnkd.in/p/g5MszaBE"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="certification-card__link"
+        >
+          View Certificate <span>↗</span>
+        </a>
+      </article>
+
+      {/* University of Moratuwa Certificate */}
+      <article className="certification-card card">
+        <div className="certification-card__icon">💻</div>
+        <span className="certification-card__category">Information Technology</span>
+        <h3>Python for Beginners</h3>
+        <p className="certification-card__issuer">
+          University of Moratuwa
+        </p>
+        <p className="certification-card__description">
+          Free Beginner IT Course focused on developing
+          foundational IT and programming knowledge.
+        </p>
+        <a
+          href="https://lnkd.in/p/ghMzK-4T"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="certification-card__link"
+        >
+          View Certificate <span>↗</span>
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
       {/* Skills Section */}
       <section
         className="skills-section section"

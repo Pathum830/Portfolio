@@ -1,0 +1,184 @@
+
+/* GLOBAL LIGHT THEME */
+
+:root {
+  color-scheme: light;
+
+  --page-bg: #ffffff;
+  --surface-bg: #f8fafc;
+  --card-bg: #ffffff;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --border-color: #e5e7eb;
+  --input-bg: #ffffff;
+  --primary-color: #6366f1;
+  --shadow-color: rgba(0, 0, 0, 0.08);
+}
+
+/* GLOBAL DARK THEME */
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --page-bg: #0b1120;
+  --surface-bg: #111827;
+  --card-bg: #172033;
+  --text-primary: #f9fafb;
+  --text-secondary: #cbd5e1;
+  --border-color: #374151;
+  --input-bg: #1f2937;
+  --primary-color: #a78bfa;
+  --shadow-color: rgba(0, 0, 0, 0.25);
+}
+
+/* Global application styles */
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  background: var(--page-bg);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#root {
+  background: var(--page-bg);
+  color: var(--text-primary);
+}
+
+[data-theme] {
+  color: var(--text-primary);
+}
+
+[data-theme] .card,
+[data-theme] .skill-card,
+[data-theme] .certification-card,
+[data-theme] .education__item {
+  background-color: var(--card-bg);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme] input,
+[data-theme] textarea,
+[data-theme] select {
+  background-color: var(--input-bg);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme] p,
+[data-theme] .section-subtitle {
+  color: var(--text-secondary);
+}
+
+[data-theme] h1,
+[data-theme] h2,
+[data-theme] h3,
+[data-theme] h4 {
+  color: var(--text-primary);
+}
+
+[data-theme] .section {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* =================================
+   GLOBAL THEME COLORS
+================================= */
+
+:root {
+  --page-bg: #f8fafc;
+  --surface-bg: #ffffff;
+  --card-bg: #ffffff;
+
+  --text-primary: #172554;
+  --text-secondary: #475569;
+
+  --heading-color: #172554;
+  --subtitle-color: #475569;
+
+  --accent-color: #4f46e5;
+  --tag-bg: #e0e7ff;
+  --tag-text: #4338ca;
+
+  --border-color: #e2e8f0;
+}
+
+/* DARK MODE */
+
+[data-theme="dark"] {
+  --page-bg: #101d32;
+  --surface-bg: #15243a;
+  --card-bg: #1b2b43;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #c5d3e5;
+
+  --heading-color: #ffffff;
+  --subtitle-color: #c5d3e5;
+
+  --accent-color: #67e8f9;
+  --tag-bg: #193b55;
+  --tag-text: #67e8f9;
+
+  --border-color: #334155;
+}
+
+/* GLOBAL BACKGROUND AND TEXT */
+
+body,
+#root {
+  background: var(--page-bg);
+  color: var(--text-primary);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* PAGE HERO */
+
+.page-hero {
+  background: var(--page-bg);
+  color: var(--text-primary);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.page-hero__title {
+  color: var(--heading-color) !important;
+}
+
+.page-hero__subtitle {
+  color: var(--subtitle-color) !important;
+}
+
+.section-tag {
+  background: var(--tag-bg);
+  color: var(--tag-text) !important;
+  border-color: transparent;
+}
+
+/* ALL SECTIONS */
+
+.section-title {
+  color: var(--heading-color);
+}
+
+.section-subtitle {
+  color: var(--subtitle-color);
+}
+
+/* CARDS */
+
+.card,
+.skill-card,
+.certification-card,
+.education__item {
+  background: var(--card-bg);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
