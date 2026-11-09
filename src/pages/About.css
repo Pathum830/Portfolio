@@ -1,0 +1,332 @@
+/* ========= ABOUT PAGE ========= */
+
+/* Page Hero (shared across pages) */
+.page-hero {
+  background: var(--gray-900);
+  padding: calc(var(--navbar-height) + var(--space-16)) 0 var(--space-16);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.page-hero__bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--secondary) 0%, #0a192f 100%);
+  opacity: 0.95;
+}
+
+.page-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.page-hero .section-tag {
+  background: rgba(56, 189, 248, 0.15);
+  color: var(--accent);
+}
+
+.page-hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: var(--white);
+  margin: var(--space-4) 0;
+}
+
+.page-hero__subtitle {
+  font-size: 1.1rem;
+  color: var(--gray-400);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Bio Grid */
+.about-bio__grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+/* Photo column */
+.about-bio__photo {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, var(--gray-100), var(--gray-200));
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 3px solid var(--white);
+}
+
+.about-bio__photo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-bio__photo-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  color: var(--gray-400);
+  font-size: 0.85rem;
+}
+
+.about-bio__quick-info {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  margin-top: var(--space-4);
+}
+
+.about-bio__info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--gray-100);
+  font-size: 0.88rem;
+}
+
+.about-bio__info-item:last-child {
+  border-bottom: none;
+}
+
+.about-bio__info-label {
+  color: var(--gray-500);
+  font-weight: 500;
+}
+
+.about-bio__info-value {
+  color: var(--gray-800);
+  font-weight: 600;
+}
+
+.about-bio__info-value--green {
+  color: #059669;
+}
+
+/* Text column */
+.about-bio__name {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--gray-900);
+  margin-bottom: var(--space-2);
+}
+
+.about-bio__role {
+  font-size: 1rem;
+  color: var(--primary);
+  font-weight: 500;
+  margin-bottom: var(--space-6);
+}
+
+.about-bio__para {
+  font-size: 0.97rem;
+  color: var(--gray-600);
+  line-height: 1.8;
+  margin-bottom: var(--space-4);
+}
+
+/* Goals */
+.about-goals {
+  margin-top: var(--space-6);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--gray-200);
+}
+
+.about-goals__title {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  margin-bottom: var(--space-4);
+}
+
+.about-goals__grid {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.about-goals__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: rgba(37, 99, 235, 0.07);
+  color: var(--primary);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid rgba(37, 99, 235, 0.15);
+}
+
+.about-goals__icon {
+  font-size: 1rem;
+}
+
+/* Education Timeline */
+.education__timeline {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.education__item {
+  display: flex;
+  gap: var(--space-6);
+  padding: var(--space-8);
+}
+
+.education__icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+  margin-top: var(--space-1);
+}
+
+.education__period {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--primary);
+  background: rgba(37, 99, 235, 0.08);
+  padding: 0.15rem 0.75rem;
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-3);
+}
+
+.education__degree {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: var(--space-2);
+}
+
+.education__institution {
+  font-size: 0.95rem;
+  color: var(--primary);
+  font-weight: 500;
+  margin-bottom: var(--space-4);
+}
+
+.education__desc {
+  font-size: 0.92rem;
+  color: var(--gray-600);
+  line-height: 1.7;
+  margin-bottom: var(--space-4);
+}
+
+.education__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.education__tag {
+  background: var(--gray-100);
+  color: var(--gray-600);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-4);
+}
+
+.skill-card {
+  padding: var(--space-5) var(--space-6);
+  cursor: default;
+}
+
+.skill-card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.skill-card__icon {
+  font-size: 1.8rem;
+  width: 44px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.skill-card__name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gray-800);
+  line-height: 1.2;
+  margin-bottom: 2px;
+}
+
+.skill-card__category {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gray-400);
+  font-weight: 500;
+}
+
+.skill-card__percent {
+  margin-left: auto;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+/* Progress bar */
+.skill-card__bar {
+  height: 6px;
+  background: var(--gray-100);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.skill-card__bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  border-radius: var(--radius-full);
+  transition: width 1s ease;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-bio__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-bio__photo {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .education__item {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+}
