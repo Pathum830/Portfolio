@@ -141,13 +141,13 @@ function Contact() {
                   <div>
                     <span className="contact-info__label">LinkedIn</span>
                     <a
-                      href="https://linkedin.com/in/pathum-siriwardhana"
+                      href="https://linkedin.com/in/pathum-siriwardhana-b78a9236b"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="contact-info__value contact-info__value--link"
                       aria-label="Visit LinkedIn profile (opens in new tab)"
                     >
-                      linkedin.com/in/pathum-siriwardhana
+                      linkedin.com/in/pathum-siriwardhana-b78a9236b
                     </a>
                   </div>
                 </li>
